@@ -87,7 +87,7 @@ ggplot(data=newdatb, aes(x=Week, y=mean)) +
                 ylab("Log zoospores") +
                     scale_colour_discrete(labels=c(expression(italic("Atelopus")),expression(italic("Espadarana"))))
 
-ggsave("/home/tate/marylandpostdoc/atelopusCpExp/manuscript/figures/Fig1.tiff")
+ggsave("Fig1.tiff")
 
 ## mixed with Atelopus filter and Ep swab
 
@@ -144,7 +144,7 @@ ggplot(data=newdatf, aes(x=Week, y=mean)) +
                     scale_linetype_discrete(labels=c(expression(italic("Atelopus")),expression(italic("Espadarana")))) +
                         scale_shape_discrete(guide=FALSE)
 
-ggsave("/home/tate/marylandpostdoc/atelopusCpExp/manuscript/figures/Fig2.tiff")
+ggsave("Fig2.tiff")
 
 ## make parameters table
 
@@ -181,7 +181,7 @@ rownames(restable) <- c("Atelopus",
                         "Espadarana Het x Week"
                         )
 
-write.csv(round(restable,2), "/home/tate/marylandpostdoc/atelopusCpExp/manuscript/tables/paramTable.csv")
+write.csv(round(restable,2), "paramTable.csv")
 
 
 
