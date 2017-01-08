@@ -1,3 +1,5 @@
+## code by Edwin Thoen from https://www.r-statistics.com/2013/07/creating-good-looking-survival-curves-the-ggsurv-function/
+
 ggsurv <- function(s, CI = 'def', plot.cens = T, surv.col = 'gg.def',
                    cens.col = 'red', lty.est = 1, lty.ci = 2,
                    cens.shape = 3, back.white = F, xlab = 'Time',
